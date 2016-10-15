@@ -16,7 +16,7 @@ There's the `T20n\Holder\Holder` class that has `make` method that accepts `heig
 
 ### Example
 
-```
+```php
 $holder = new T20n\Holder\Holder;
 $holder->make($height, $width, $color = 'A8E6CE');
 $holder->response('png');
