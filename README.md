@@ -5,8 +5,9 @@ A placeholder image generator.
 ## Install
 
 1. `composer require t20n/holder`
-2. [laravel] add the service provider to the `config/app.php` of your laravel install:
+2. [laravel] add the service provider and alias to the `config/app.php` of your laravel install:
   - Provider:`T20n\Holder\HolderServiceProvider::class,`
+  - Alias:`'Facade' => T20n\Holder\Facades\HolderFacade::class,`
 
 This will register a route called holder in the laravel app.
 
