@@ -5,13 +5,6 @@ use Illuminate\Support\ServiceProvider;
 class HolderServiceProvider extends ServiceProvider {
 
 	/**
-	 * Indicates if loading of the provider is deferred.
-	 *
-	 * @var bool
-	 */
-	protected $defer = true;
-
-	/**
 	 * Bootstrap the application services.
 	 *
 	 * @return void
@@ -28,6 +21,6 @@ class HolderServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function register() {
-		$this->app->singleton('holder', 'T20n\Holder\Holder');
+		$this->app->bind('holder', 'T20n\Holder\Holder');
 	}
 }
